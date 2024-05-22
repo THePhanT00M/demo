@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    image: java
+    expose:
+      - "8080"
+    container_name: shin_bak
+    network_mode: bridge
+    environment:
+      - VIRTUAL_HOST=dev-shinbak.com
